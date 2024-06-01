@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="@dimen/fireKit_shapeEditText_strokeWidth"
+        android:color="#272727" />
+    <corners android:radius="@dimen/fireKit_shapeEditText_radius" />
+    <padding
+        android:bottom="@dimen/fireKit_shapeEditText_paddingBottom"
+        android:left="@dimen/fireKit_shapeEditText_paddingLeft"
+        android:right="@dimen/fireKit_shapeEditText_paddingRight"
+        android:top="@dimen/fireKit_shapeEditText_paddingTop" />
+    <solid android:color="#848586" />
+</shape>

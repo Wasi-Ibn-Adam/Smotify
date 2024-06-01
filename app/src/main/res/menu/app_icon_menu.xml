@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_app_on"
+        android:title="Enable" />
+    <item
+        android:id="@+id/item_app_off"
+        android:title="Disable" />
+
+    <item
+        android:id="@+id/item_app_copy"
+        android:title="Copy" />
+
+    <item
+        android:id="@+id/item_app_share"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/item_app_details"
+        android:title="Details" />
+
+</menu>

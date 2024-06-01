@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="1dp"
+    android:background="@drawable/shape_background_app_message"
+    android:backgroundTintMode="src_in"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/holder_row_app_message_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/todo"
+        android:src="@color/fireKit_opposite_theme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/holder_row_app_message_unread"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/shape_circle_red"
+        app:layout_constraintBottom_toBottomOf="@+id/holder_row_app_message_icon"
+        app:layout_constraintEnd_toEndOf="@+id/holder_row_app_message_icon" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/holder_row_app_message_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/holder_row_app_message_icon"
+        app:layout_constraintTop_toTopOf="@id/holder_row_app_message_icon">
+
+        <TextView
+            android:id="@+id/holder_row_app_message_title"
+            style="@style/Theme.FireKit.TAB.NOTIFICATIONS.MESSAGE.TITLE"
+            android:text="Waseem Bhai"
+            app:layout_constraintEnd_toStartOf="@id/holder_row_app_message_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/holder_row_app_message_time"
+            style="@style/Theme.FireKit.TAB.NOTIFICATIONS.MESSAGE.TIME"
+            android:text="now"
+            app:layout_constraintBaseline_toBaselineOf="@+id/holder_row_app_message_title"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.lassanit.smotify.display.view.SmartMediaView
+            android:id="@+id/holder_row_app_message_smart_media"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/holder_row_app_message_title" />
+
+        <TextView
+            android:id="@+id/holder_row_app_message_text"
+            style="@style/Theme.FireKit.TAB.NOTIFICATIONS.MESSAGE.DESCRIPTION"
+            android:text="Sun Raha ha na"
+            app:layout_constraintEnd_toStartOf="@+id/holder_row_app_message_ismedia"
+            app:layout_constraintStart_toStartOf="@id/holder_row_app_message_title"
+            app:layout_constraintTop_toBottomOf="@id/holder_row_app_message_smart_media" />
+
+        <ImageView
+            android:id="@id/holder_row_app_message_ismedia"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/base_img"
+            app:layout_constraintBottom_toBottomOf="@id/holder_row_app_message_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/holder_row_app_message_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

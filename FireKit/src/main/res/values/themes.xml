@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.FireKit" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" />
+
+    <style name="Theme.FireKit.SPLASH" parent="Theme.FireKit">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:statusBarColor">@color/fireKit_window_splash_statusBar</item>
+        <item name="android:navigationBarColor">@color/fireKit_window_splash_navigationBar</item>
+        <item name="android:windowBackground">@drawable/firekit_window_splash</item>
+    </style>
+
+    <style name="Theme.FireKit.APP" parent="Theme.FireKit">
+        <item name="android:statusBarColor">@color/fireKit_window_splash_statusBar</item>
+        <item name="android:navigationBarColor">@color/fireKit_window_splash_navigationBar</item>
+        <item name="android:windowBackground">@drawable/firekit_window_background_1</item>
+    </style>
+
+    <style name="Theme.FireKit.APP.TRANSPARENT" parent="Theme.FireKit.APP">
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- *************************************************************************************** -->
+
+    <!-- Dialog Styles -->
+
+
+    <!-- *************************************************************************************** -->
+    <!-- Default App Styles -->
+    <style name="Theme.FireKit.APP.TEXT" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/fireKit_opposite_theme</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="drawableTint">@color/fireKit_opposite_theme</item>
+        <item name="android:drawableTint">@color/fireKit_opposite_theme</item>
+        <item name="drawableTintMode">src_in</item>
+        <item name="android:drawableTintMode">src_in</item>
+    </style>
+
+    <style name="Theme.FireKit.APP.TEXT.EDIT" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">@dimen/fireKit_editText_default_width</item>
+        <item name="android:layout_height">@dimen/fireKit_editText_default_height</item>
+        <item name="android:drawableTintMode">src_in</item>
+        <item name="android:autofilledHighlight" tools:targetApi="o">@color/transparent</item>
+        <item name="android:background">@drawable/firekit_shape_edittext</item>
+        <item name="android:textColor">@color/fireKit_opposite_theme</item>
+        <item name="android:backgroundTint">@color/fireKit_opposite_theme_25</item>
+        <item name="android:backgroundTintMode">src_in</item>
+        <item name="android:drawableTint">@color/fireKit_opposite_theme_50</item>
+        <item name="android:textColorHint">@color/fireKit_opposite_theme_50</item>
+        <item name="android:textCursorDrawable">@drawable/shape_custom_cursor</item>
+    </style>
+
+    <style name="Theme.FireKit.APP.BUTTON" parent="Widget.AppCompat.Button">
+        <item name="android:id">@id/fireKit_button_default</item>
+        <item name="android:textColor">@color/fireKit_theme</item>
+        <item name="android:background">@drawable/firekit_shape_button</item>
+        <item name="android:layout_width">@dimen/fireKit_button_default_width</item>
+        <item name="android:layout_height">@dimen/fireKit_button_default_height</item>
+        <item name="android:backgroundTint">@color/fireKit_opposite_theme</item>
+        <item name="android:gravity">center</item>
+        <item name="android:alpha">0.85</item>
+        <item name="android:transitionName">@string/tag_button_default</item>
+
+    </style>
+
+    <style name="Theme.FireKit.APP.BUTTON.SMALL" parent="Theme.FireKit.APP.BUTTON">
+        <item name="android:layout_width">@dimen/fireKit_button_small_width</item>
+        <item name="android:layout_height">@dimen/fireKit_button_small_height</item>
+        <item name="android:drawableStart">@drawable/base_send</item>
+        <item name="android:drawableTint">@color/fireKit_theme</item>
+        <item name="android:drawableTintMode">src_in</item>
+        <item name="android:padding">@dimen/fireKit_button_small_padding</item>
+        <item name="drawableTint">@color/fireKit_theme</item>
+        <item name="drawableTintMode">src_in</item>
+    </style>
+
+    <style name="Theme.FireKit.APP.IMG.ICON" parent="">
+        <item name="android:tint">@color/fireKit_opposite_theme</item>
+        <item name="android:tintMode">src_in</item>
+    </style>
+
+    <style name="Theme.FireKit.APP.SPINNER" parent="Widget.AppCompat.Spinner">
+        <item name="android:id">@id/fireKit_phoneText_spinner</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Theme.FireKit.APP.DIVIDER" parent="">
+        <item name="android:background">@color/fireKit_opposite_theme_50</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Theme.FireKit.APP.DIALOG" parent="MaterialAlertDialog.Material3">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">
+            @style/Theme.FireKit.APP.DIALOG.ANIMATION
+        </item>
+    </style>
+
+    <style name="Theme.FireKit.APP.DIALOG.DIM" parent="Theme.FireKit.APP.DIALOG">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Theme.FireKit.APP.DIALOG.ANIMATION">
+        <item name="android:windowEnterAnimation">@anim/show</item>
+        <item name="android:windowExitAnimation">@anim/hide</item>
+        <item name="android:windowShowAnimation">@anim/show</item>
+        <item name="android:windowHideAnimation">@anim/hide</item>
+    </style>
+
+    <!-- *************************************************************************************** -->
+    <!-- REG Styles -->
+    <style name="Theme.FireKit.REG.TEXT.EDIT.EMAIL.LAY" parent="">
+        <item name="android:id">@id/lay_email</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/fireKit_opposite_theme_75</item>
+        <item name="hintTextColor">@color/fireKit_opposite_theme_75</item>
+        <item name="android:textCursorDrawable">@drawable/shape_custom_cursor</item>
+    </style>
+
+    <style name="Theme.FireKit.REG.TEXT.EDIT.PASSWORD.LAY" parent="Theme.FireKit.REG.TEXT.EDIT.EMAIL.LAY">
+        <item name="android:id">@id/lay_pass</item>
+        <item name="passwordToggleEnabled">true</item>
+    </style>
+
+    <style name="Theme.FireKit.REG.TEXT.EDIT.PASSWORD.CONFIRM.LAY" parent="Theme.FireKit.REG.TEXT.EDIT.PASSWORD.LAY">
+        <item name="android:id">@id/lay_pass_con</item>
+    </style>
+
+    <style name="Theme.FireKit.REG.TEXT.EDIT.EMAIL" parent="Theme.FireKit.APP.TEXT.EDIT">
+        <item name="android:id">@id/fireKit_editText_email</item>
+        <item name="android:drawableStart">@drawable/base_email</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:hint">@string/fireKit_hint_editText_email</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:transitionName">@string/tag_edittext_default</item>
+        <item name="android:autofillHints" tools:targetApi="o">emailAddress</item>
+    </style>
+
+    <style name="Theme.FireKit.REG.TEXT.EDIT.PASSWORD" parent="Theme.FireKit.APP.TEXT.EDIT">
+        <item name="android:id">@id/fireKit_editText_password</item>
+        <item name="android:drawableStart">@drawable/base_pass</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:hint">@string/fireKit_hint_editText_password</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:transitionName">@string/tag_edittext_extra</item>
+        <item name="android:autofillHints" tools:targetApi="o">textPassword</item>
+    </style>
+
+    <style name="Theme.FireKit.REG.TEXT.EDIT.PASSWORD.CONFIRM" parent="Theme.FireKit.REG.TEXT.EDIT.PASSWORD">
+        <item name="android:id">@id/fireKit_editText_passwordConfirm</item>
+        <item name="android:hint">@string/fireKit_hint_editText_passwordConfirm</item>
+    </style>
+
+    <style name="Theme.FireKit.REG.TEXT" parent="Theme.FireKit.APP.TEXT">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/fireKit_opposite_theme</item>
+        <item name="android:alpha">0.85</item>
+
+    </style>
+
+
+    <!-- SignIn Styles -->
+    <style name="Theme.FireKit.REG.TEXT.FORGET" parent="Theme.FireKit.REG.TEXT">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Theme.FireKit.REG.TEXT.REG" parent="Theme.FireKit.REG.TEXT">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- PHONE Styles  **** Need to edit yet -->
+    <style name="Theme.FireKit.PHONE.SPINNER" parent="Theme.FireKit.APP.TEXT">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Theme.FireKit.TEXT.EDIT.PHONE" parent="Theme.FireKit.APP.TEXT.EDIT">
+        <item name="android:id">@id/fireKit_phoneText_editText</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:background">@null</item>
+        <item name="android:autofillHints" tools:targetApi="o">no</item>
+    </style>
+
+
+    <style name="Theme.FireKit.TEXT.PHONE" parent="Theme.FireKit.APP.TEXT.EDIT">
+        <item name="android:id">@id/fireKit_phoneText</item>
+        <item name="android:transitionName">@string/tag_edittext_default</item>
+        <item name="numberAppearance">@style/Theme.FireKit.TEXT.EDIT.PHONE</item>
+        <item name="android:hint">@string/fireKit_hint_phoneText</item>
+        <item name="android:popupBackground">@color/fireKit_theme_75</item>
+    </style>
+
+    <style name="Theme.FireKit.TEXT.EDIT.CODE" parent="CardView">
+        <item name="android:id">@id/fireKit_codeInput</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="animate_on_complete">true</item>
+        <item name="code_text_color">@color/fireKit_opposite_theme</item>
+        <item name="code_text_size">22sp</item>
+        <item name="error_color">#D32F2F</item>
+        <item name="input_type">numeric</item>
+        <item name="length_of_code">6</item>
+        <item name="on_complete_delay">50</item>
+        <item name="underline_color">@color/fireKit_opposite_theme_75</item>
+        <item name="underline_selected_color">@color/fireKit_opposite_theme_75</item>
+
+    </style>
+
+
+    <!-- *************************************************************************************** -->
+
+    <!-- Consent Styles -->
+
+    <!-- Consent-POLICY Style -->
+    <style name="Theme.FireKit.Consent.POLICY.TEXT" parent="Theme.FireKit.APP.TEXT">
+        <item name="android:textSize">18sp</item>
+        <item name="android:alpha">0.75</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.POLICY.LINK" parent="Theme.FireKit.Consent.POLICY.TEXT">
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.POLICY.BUTTON" parent="Theme.FireKit.APP.BUTTON">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">0.75</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.POLICY.BUTTON.TEXT" parent="Theme.FireKit.APP.TEXT">
+        <item name="android:textColor">@color/fireKit_theme</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.POLICY.BUTTON.IMG" parent="Theme.FireKit.Consent.POLICY.BUTTON">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:tint">#27AD2C</item>
+    </style>
+
+    <!-- Consent-ACCOUNT Style -->
+
+    <style name="Theme.FireKit.Consent.ACCOUNT.TEXTVIEW.TITLE" parent="Theme.FireKit.APP.TEXT">
+        <item name="android:fontFamily">@font/akaya_telivigala</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.Account.Item" parent="Theme.FireKit.APP.IMG.ICON">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">0.25</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.Account.Item.YES" parent="Theme.FireKit.Consent.Account.Item">
+        <item name="android:src">@drawable/base_tick</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.Account.Item.NO" parent="Theme.FireKit.Consent.Account.Item">
+        <item name="android:src">@drawable/base_no</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.Account.Item.SOON" parent="Theme.FireKit.Consent.Account.Item">
+        <item name="android:src">@drawable/base_soon</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.Account.Item.SELECT" parent="Theme.FireKit.Consent.Account.Item">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:tint">@null</item>
+        <item name="android:src">@drawable/base_continue</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.ACCOUNT.NOTE" parent="Theme.FireKit.APP.TEXT">
+        <item name="android:alpha">0.75</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.ACCOUNT.TableRow" parent="">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:background">@color/fireKit_theme_50</item>
+    </style>
+
+    <style name="Theme.FireKit.Consent.ACCOUNT.TableRow.ITEM.HEADER" parent="Theme.FireKit.APP.TEXT">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">0.25</item>
+
+    </style>
+
+    <style name="Theme.FireKit.Consent.ACCOUNT.TableRow.ITEM.TEXT" parent="Theme.FireKit.APP.TEXT">
+        <item name="android:gravity">start</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

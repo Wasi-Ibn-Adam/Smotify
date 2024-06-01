@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/setting_tab_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/todo"
+        android:padding="3dp"
+        android:src="@drawable/person"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/setting_tab_seekbar_lay"
+        app:layout_constraintEnd_toStartOf="@id/setting_tab_extra_lay"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/setting_tab_logo"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/setting_tab_title"
+            style="@style/Theme.FireKit.TAB.SETTINGS.TITLE" />
+
+        <TextView
+            android:id="@+id/setting_tab_desc"
+            style="@style/Theme.FireKit.TAB.SETTINGS.DESCRIPTION" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_tab_extra_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/setting_tab_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/setting_tab_logo">
+
+        <ImageView
+            android:id="@+id/setting_tab_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/todo"
+            android:padding="3dp"
+            android:src="@drawable/base_forward"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/setting_tab_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:padding="3dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/setting_tab_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/setting_tab_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_tab_seekbar_lay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/setting_tab_logo">
+
+        <TextView
+            android:id="@+id/setting_tab_seekbar_min"
+            style="@style/Theme.FireKit.APP.TEXT"
+            android:layout_weight="0.15"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/setting_tab_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="0.75"
+            android:progressTint="@color/fireKit_opposite_theme_75"
+            android:thumbTint="@color/fireKit_opposite_theme" />
+
+        <TextView
+            android:id="@+id/setting_tab_seekbar_max"
+            style="@style/Theme.FireKit.APP.TEXT"
+            android:layout_weight="0.15"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

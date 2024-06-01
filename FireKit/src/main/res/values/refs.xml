@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="firekit_splash_logo" type="drawable">@drawable/app_logo</item>
+    <item name="firekit_app_logo" type="drawable">@drawable/app_logo</item>
+    <item name="firekit_company_logo" type="drawable">@drawable/app_logo</item>
+</resources>

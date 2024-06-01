@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_msg_link"
+        android:title="Notification Click" />
+    <item
+        android:id="@+id/item_msg_media_img"
+        android:title="Display Images" />
+
+    <item
+        android:id="@+id/item_msg_media_audio"
+        android:title="Play Audio" />
+
+    <item
+        android:id="@+id/item_msg_details"
+        android:title="Complete Details" />
+
+    <item
+        android:id="@+id/item_msg_delete"
+        android:title="Delete Notification" />
+</menu>

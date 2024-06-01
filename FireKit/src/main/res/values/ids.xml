@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="fireKit_app_logo" type="id" />
+    <item name="fireKit_app_name" type="id" />
+
+
+    <item name="fireKit_company" type="id" />
+    <item name="fireKit_company_logo" type="id" />
+    <item name="fireKit_company_name" type="id" />
+
+    <item name="fireKit_editText_email" type="id" />
+    <item name="fireKit_editText_password" type="id" />
+    <item name="fireKit_editText_passwordConfirm" type="id" />
+
+    <item name="fireKit_phoneText" type="id" />
+    <item name="fireKit_phoneText_spinner" type="id" />
+    <item name="fireKit_phoneText_editText" type="id" />
+
+    <item name="fireKit_codeInput" type="id" />
+
+    <item name="fireKit_button_default" type="id" />
+    <item name="fireKit_button_small" type="id" />
+
+    <item name="lay_email" type="id" />
+    <item name="lay_pass" type="id" />
+    <item name="lay_pass_con" type="id" />
+
+
+</resources>

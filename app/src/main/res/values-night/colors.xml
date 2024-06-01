@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="firekit_theme_shadow_1">#03FFFFFF</color>
+    <color name="firekit_theme_shadow_2">#09FFFFFF</color>
+    <color name="firekit_theme_shadow_3">#10FFFFFF</color>
+
+
+    <color name="profile_cover_box_start">#8CADC4</color>
+    <color name="profile_cover_box_center">#BFE3E6</color>
+    <color name="profile_cover_box_end">#9EDDFF</color>
+
+
+</resources>

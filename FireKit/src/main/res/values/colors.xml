@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--*  FireKit App -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+
+
+    <color name="fireKit_theme">#FFFFFF</color>
+    <color name="fireKit_theme_25">#40FFFFFF</color>
+    <color name="fireKit_theme_50">#80FFFFFF</color>
+    <color name="fireKit_theme_75">#BFFFFFFF</color>
+    <color name="fireKit_opposite_theme">#000000</color>
+    <color name="fireKit_opposite_theme_25">#40000000</color>
+    <color name="fireKit_opposite_theme_50">#80000000</color>
+    <color name="fireKit_opposite_theme_75">#BF000000</color>
+
+    <!--*  FireKit Activity / Window -->
+
+    <color name="fireKit_window_app_statusBar">#000000</color>
+
+    <color name="fireKit_window_splash_statusBar">@color/transparent</color>
+    <color name="fireKit_window_splash_navigationBar">@color/transparent</color>
+
+
+    <color name="fireKit_window_back_start">#D4D8F2</color>
+    <color name="fireKit_window_back_center">#CDD5E4</color>
+    <color name="fireKit_window_back_end">#E0E6F0</color>
+
+
+    <!--*  FireKit EditText / PhoneText -->
+    <!--  shape -->
+
+</resources>

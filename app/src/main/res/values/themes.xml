@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--######################### CUSTOM-TAB STYLE ###########################-->
+
+    <style name="Theme.FireKit.APP.TEXT.BLACK" parent="Theme.FireKit.APP.TEXT">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- ======================== Toolbar Fields ========================  -->
+
+    <style name="Theme.FireKit.TAB.TOOLBAR.TITLE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/bilbo_swash_caps</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.FireKit.TAB.TOOLBAR.SUBTITLE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/bilbo</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- ======================== Tab-Layout Fields ========================  -->
+
+    <style name="Theme.FireKit.TAB.LAYOUT" parent="TextAppearance.Design.Tab">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <!-- ======================== Profile Fields ========================  -->
+
+    <style name="Theme.FireKit.TAB.PROFILE.LABEL" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">15dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Theme.FireKit.TAB.PROFILE.VALUE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">15dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Theme.FireKit.TAB.PROFILE.VALUE.IMG" parent="Theme.FireKit.APP.IMG.ICON">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- ======================== Notification Header Fields ========================  -->
+
+    <style name="Theme.FireKit.NOTIFICATIONS.HEADER.ACTIONS" parent="Theme.FireKit.APP.BUTTON">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/fireKit_theme_25</item>
+        <item name="android:textColor">@color/fireKit_opposite_theme</item>
+        <item name="android:layout_marginStart">1dp</item>
+        <item name="android:layout_marginEnd">1dp</item>
+    </style>
+
+
+    <style name="Theme.FireKit.TAB.NOTIFICATIONS.HEADER.TITLE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Theme.FireKit.TAB.NOTIFICATIONS.HEADER.NUMBER" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/shape_circle_red</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- ======================== Notification Message Fields ========================  -->
+
+    <style name="Theme.FireKit.TAB.NOTIFICATIONS.MESSAGE.TITLE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/fireKit_theme</item>
+    </style>
+
+    <style name="Theme.FireKit.TAB.NOTIFICATIONS.MESSAGE.DESCRIPTION" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/fireKit_theme</item>
+    </style>
+
+    <style name="Theme.FireKit.TAB.NOTIFICATIONS.MESSAGE.TIME" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/fireKit_theme</item>
+        <item name="android:maxLength">15</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- ======================== App Holder ========================  -->
+
+    <style name="Theme.FireKit.TAB.APP.TITLE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- ======================== Empty Field ========================  -->
+
+    <style name="Theme.FireKit.TAB.EMPTY" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- ======================== More Field ========================  -->
+
+    <style name="Theme.FireKit.TAB.MORE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">#303F9F</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- ======================== Settings Fields ========================  -->
+
+    <style name="Theme.FireKit.TAB.SETTINGS.HEADER" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">15dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Theme.FireKit.TAB.SETTINGS.TITLE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Theme.FireKit.TAB.SETTINGS.DESCRIPTION" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- ====================== ################## =======================  -->
+
+    <!--########################## POP-UP STYLE ############################-->
+
+    <!-- ======================== Permission Fields ========================  -->
+
+
+    <style name="Theme.FireKit.DIALOG.PERMISSION.TITLE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textStyle">bold|normal</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.PERMISSION.DESCRIPTION" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:paddingBottom" tools:ignore="NewApi">10dp</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.PERMISSION.BUTTON" parent="Theme.FireKit.APP.BUTTON">
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.PERMISSION.BUTTON.CANCEL" parent="Theme.FireKit.DIALOG.PERMISSION.BUTTON">
+        <item name="android:textColor">@color/fireKit_opposite_theme_75</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.PERMISSION.BUTTON.GRANT" parent="Theme.FireKit.DIALOG.PERMISSION.BUTTON">
+        <item name="android:textColor">#485EE6</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ======================== Display Fields ========================  -->
+
+    <style name="Theme.FireKit.DIALOG.DISPLAY.TITLE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lines">1</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.DISPLAY.LABEL" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textStyle">bold|normal</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.DISPLAY.VALUE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:alpha">0.9</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorLink">#005FFD</item>
+    </style>
+
+    <!-- ======================== Input Fields ========================  -->
+
+    <style name="Theme.FireKit.DIALOG.INPUT.LABEL" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.INPUT.VALUE" parent="Theme.FireKit.APP.TEXT.EDIT">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginVertical" tools:ignore="NewApi">5dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.INPUT.VALUE.PASSWORD" parent="Theme.FireKit.APP.TEXT.EDIT">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginVertical" tools:ignore="NewApi">5dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.INPUT.BUTTON" parent="Theme.FireKit.APP.BUTTON">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.INPUT.BUTTON.NEGATIVE" parent="Theme.FireKit.DIALOG.INPUT.BUTTON">
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.INPUT.BUTTON.POSITIVE" parent="Theme.FireKit.DIALOG.INPUT.BUTTON">
+        <item name="android:backgroundTint">#E662B667</item>
+    </style>
+
+    <!-- ======================== Welcome Fields ========================  -->
+
+    <style name="Theme.FireKit.DIALOG.WELCOME.TITLE" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:background">@drawable/shape_cover_box</item>
+        <item name="android:backgroundTint">@color/fireKit_window_app_statusBar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.WELCOME.DESCRIPTION" parent="Theme.FireKit.APP.TEXT">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">15dp</item>
+        <item name="android:paddingVertical" tools:ignore="NewApi">10dp</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.WELCOME.DESCRIPTION.LIST" parent="Theme.FireKit.DIALOG.WELCOME.DESCRIPTION">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <!-- ======================== Menu Bottom ========================  -->
+
+    <style name="Theme.FireKit.DIALOG.MENU.BOTTOM" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/shape_box_curved_navigation</item>
+    </style>
+
+    <!-- ================== Dialog Decoration Image ==================  -->
+
+    <style name="Theme.FireKit.DIALOG.DECOR" parent="">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:contentDescription">@string/todo</item>
+        <item name="android:src">@drawable/base_bell_black_gold</item>
+        <item name="android:foreground">@drawable/base_bell_black_gold</item>
+        <item name="android:background">@null</item>
+        <item name="layout_constraintTop_toTopOf">@id/handler_image_layout</item>
+        <item name="layout_constraintBottom_toTopOf">@id/handler_image_layout</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.DECOR.LEFT" parent="Theme.FireKit.DIALOG.DECOR">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:rotationY">0</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintStart_toStartOf">@id/handler_image_layout</item>
+    </style>
+
+    <style name="Theme.FireKit.DIALOG.DECOR.RIGHT" parent="Theme.FireKit.DIALOG.DECOR">
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:rotationY">180</item>
+        <item name="layout_constraintHorizontal_bias">1.0</item>
+        <item name="layout_constraintEnd_toEndOf">@id/handler_image_layout</item>
+    </style>
+
+    <!-- ================== ################## ==================  -->
+
+
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+
+</resources>

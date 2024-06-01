@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/handler_ads_view" />
+
+    <include
+        layout="@layout/handler_tool_bar"
+        android:paddingBottom="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/handler_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.lassanit.smotify.customviews.SettingsTab
+                android:id="@+id/tab_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/shape_background_app_header"
+                android:src="@drawable/base_user"
+                android:title="Profile"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+
+                android:background="@drawable/shape_background_app_header"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Theme.FireKit.TAB.SETTINGS.HEADER"
+                    android:text="Preferences" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_media_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_save"
+                    android:title="Save Media"
+                    app:desc="Save Images found in Notification"
+                    app:extraType="yesNo" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_media_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_display"
+                    android:title="Display Media"
+                    app:desc="Display Images in Quick-View"
+                    app:extraType="yesNo" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_media_quick_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_display"
+                    android:title="Notification Count"
+                    app:desc="Display Notification in Quick-View = 3"
+                    app:max="10"
+                    app:progress="3"
+                    app:seekbar="true" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_media_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_click"
+                    android:title="Media Click"
+                    app:desc="Open Notifications/Images when click, in Quick-View Notifications"
+                    app:extraType="yesNo" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_msg_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_list_top"
+                    android:title="Scroll Up"
+                    app:desc="Scroll to Top when New Message Received"
+                    app:extraType="yesNo" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_battery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_battery"
+                    android:title="Battery Optimization"
+                    app:desc="Remove battery Optimization, to insure better performance"
+                    app:extraType="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/shape_background_app_header"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Theme.FireKit.TAB.SETTINGS.HEADER"
+                    android:text="Cloud Services" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_cloud_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_link_c"
+                    android:title=""
+                    app:desc="" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_cloud_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_share_doc"
+                    android:title="Cloud Share"
+                    app:desc="Share this device data to other devices using same account"
+                    app:extraType="yesNo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/shape_background_app_header"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Theme.FireKit.TAB.SETTINGS.HEADER"
+                    android:text="Data Resilience" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_backup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_local_backup"
+                    android:title="Backup"
+                    app:desc="Make a local backup of existing notifications (This Device and Cloud* if active)" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_restore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_local_restore"
+                    android:title="Restore"
+                    app:desc="Restore your Notifications from a local-backup file(This Device and Cloud* if exist)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/shape_background_app_header"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Theme.FireKit.TAB.SETTINGS.HEADER"
+                    android:text="Ads Removal" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_ads_removal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_ad"
+                    app:desc="" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_ads_removal_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_ads"
+                    app:desc="Earn an Hour free of Ads" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/shape_background_app_header"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Theme.FireKit.TAB.SETTINGS.HEADER"
+                    android:text="Legality" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_policy"
+                    app:desc="@string/fireKit_action_textView_policy" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_terms"
+                    app:desc="@string/fireKit_action_textView_terms" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/shape_background_app_header"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Theme.FireKit.TAB.SETTINGS.HEADER"
+                    android:text="Account" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_signout"
+                    android:title=""
+                    app:desc="Sign out" />
+
+                <com.lassanit.smotify.customviews.SettingsTab
+                    android:id="@+id/tab_s_join_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_guest"
+                    android:title="Want to be a User??"
+                    app:desc="Your notifications remain secure when you switch to User mode, and you can still access them. However, if you switch back to Guest mode, it's like starting fresh, and your previous notifications won't be retained." />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

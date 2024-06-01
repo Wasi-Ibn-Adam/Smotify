@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/handler_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_background_app_dialog"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dialog_appdata_display_header_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/todo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_appdata_display_header_name"
+                style="@style/Theme.FireKit.DIALOG.DISPLAY.TITLE" />
+
+            <TextView
+                android:id="@+id/dialog_appdata_display_header_pkg"
+                style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                    android:text="Total Notifications: " />
+
+                <TextView
+                    android:id="@+id/dialog_appdata_display_header_total"
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                    android:text="Unread Notifications: " />
+
+                <TextView
+                    android:id="@+id/dialog_appdata_display_header_unread"
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                    android:text="Last Notification Time: " />
+
+                <TextView
+                    android:id="@+id/dialog_appdata_display_header_time"
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE"
+                    android:text="now" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/Theme.FireKit.DIALOG.DECOR.RIGHT"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

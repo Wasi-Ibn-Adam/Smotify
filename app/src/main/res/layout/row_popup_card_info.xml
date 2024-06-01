@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/popup_info_title"
+        style="@style/Theme.FireKit.APP.TEXT"
+        android:layout_width="match_parent"
+        android:background="@color/fireKit_window_app_statusBar"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="How to Use"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/popup_info_text"
+        style="@style/Theme.FireKit.APP.TEXT"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="1dmsdc e sfdmol xk skm  xmv evmx e ,x ve ms  lvel vs,.evea; ad av;de vmdf emv amkv  e assmda ms a;m awms alfasasv cd cv  efdveav de adk.am,  ds,c ac sd .,a v cv v edv v dvv/,cv eve l, vc v dv ea"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/popup_info_btn_cancel"
+            style="@style/Theme.FireKit.APP.BUTTON"
+            android:layout_width="100dp"
+            android:layout_marginEnd="10dp"
+            android:text="Skip"
+            android:textAllCaps="false"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/popup_info_btn_next"
+            style="@style/Theme.FireKit.APP.BUTTON.SMALL"
+            android:layout_marginStart="10dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

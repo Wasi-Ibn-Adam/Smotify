@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Shadow Layers-->
+
+    <item
+        android:left="2dp"
+        android:top="2dp">
+        <shape android:shape="rectangle">
+            <padding
+                android:bottom="2dp"
+                android:left="0dp"
+                android:right="2dp"
+                android:top="0dp" />
+            <corners android:radius="15dp" />
+            <solid android:color="#17000000" />
+        </shape>
+    </item>
+
+    <!--################# -->
+    <item
+        android:left="1.5dp"
+        android:top="1.5dp">
+        <shape android:shape="rectangle">
+            <padding
+                android:bottom="1.5dp"
+                android:left="0dp"
+                android:right="1.5dp"
+                android:top="0dp" />
+            <corners android:radius="15dp" />
+            <solid android:color="#14000000" />
+        </shape>
+    </item>
+
+    <!--################# -->
+
+    <item
+        android:left="1dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+
+            <padding
+                android:bottom="1dp"
+                android:left="0.5dp"
+                android:right="1dp"
+                android:top="0.5dp" />
+            <corners android:radius="15dp" />
+            <solid android:color="#12000000" />
+
+        </shape>
+    </item>
+
+    <!--ForeGround-->
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/white" />
+            <corners android:radius="15dp" />
+            <!--
+            <solid android:color="@color/fireKit_shapeActivityBackground_gradientCenter" />
+             -->
+            <gradient
+                android:centerColor="@color/fireKit_shapeActivityBackground_gradientEnd"
+                android:endColor="@color/fireKit_shapeActivityBackground_gradientStart"
+                android:gradientRadius="45dp"
+                android:startColor="@color/fireKit_shapeActivityBackground_gradientCenter" />
+        </shape>
+    </item>
+
+
+</layer-list>

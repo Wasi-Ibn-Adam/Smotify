@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Smart Notify</string>
+    <string name="provider_authorities">com.lassanit.smotify.provider</string>
+    <string name="disable_str">All Apps-Notifications are currently disabled.</string>
+    <string name="how_enable_str">Click Bell Icon on Top bar to enable</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_title">Welcome to Smart Notify!</string>
+    <string name="welcome_text_1">
+         <![CDATA[
+         <html><body style="text-align: justify;">
+            Stay organized and never miss an important update again with <b>Smart Notify</b>. Save notifications, categorize them, and get the information you need at a glance.
+        </body></html>
+        ]]>
+    </string>
+    <string name="welcome_text_2">
+         <![CDATA[
+         <html><body style="text-align: justify;">
+            <b>Key Features</b>
+            <br>
+            <b>1)</b>  Save Notifications<br>
+            <b>2)</b>  Quick Glance<br>
+            <b>3)</b>  Privacy Checks<br>
+            <b>4)</b>  Cloud Sharing<br>
+            <b>5)</b>  Backup/Restore
+        </body></html>
+        ]]>
+    </string>
+    <string name="welcome_text_3">
+         <![CDATA[
+         <html><body style="text-align: justify;">
+            <i>Get Started:</i> Tap "<b>Button</b>" below to begin managing your notifications smarter.
+        </body></html>
+        ]]>
+    </string>
+    <string name="ad_id_native">ca-app-pub-1537175714865205/2480291359</string>
+    <string name="ad_id_banner">ca-app-pub-1537175714865205/6826169081</string>
+    <string name="ad_id_interstitial">ca-app-pub-1537175714865205/3114988935</string>
+    <string name="ad_id_open_app">ca-app-pub-1537175714865205/9746403242</string>
+    <string name="ad_id_reward">ca-app-pub-1537175714865205/3835693871</string>
+
+
+</resources>

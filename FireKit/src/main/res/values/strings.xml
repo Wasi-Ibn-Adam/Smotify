@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">PeerLess</string>
+
+
+    <!--   Tags related to topic -->
+
+    <string name="tag_app_name">app_name</string>
+    <string name="tag_app_logo">app_logo</string>
+    <string name="tag_company_name">company_name</string>
+    <string name="tag_company_logo">company_logo</string>
+
+
+    <string name="tag_button_default">button_default</string>
+    <string name="tag_button_extra">button_extra</string>
+
+    <string name="tag_edittext_default">edittext_phone</string>
+    <string name="tag_edittext_extra">edittext_email</string>
+
+    <!--   Button/TextView text or EditText hints -->
+    <string name="fireKit_action_textView_terms"><u>Terms &amp; Conditions</u></string>
+    <string name="fireKit_action_textView_policy"><u>Privacy Policy </u></string>
+    <string name="fireKit_info_textView_policyTerms">By continuing you accept our </string>
+
+    <string name="fireKit_hint_editText_email">Email</string>
+    <string name="fireKit_hint_editText_password">Password</string>
+    <string name="fireKit_hint_editText_passwordConfirm">Confirm Password</string>
+    <string name="fireKit_hint_phoneText">3001234567</string>
+
+    <string name="fireKit_action_button_signIn">Log-In</string>
+    <string name="fireKit_action_button_signUp">Register</string>
+    <string name="fireKit_action_button_agree">I Agree</string>
+    <string name="fireKit_action_textView_forgetPassword">Forget Password</string>
+
+    <string name="fireKit_info_textView_newUser">New User | </string>
+    <string name="fireKit_info_textView_poweredBy">Powered by</string>
+    <string name="fireKit_info_textView_register"><u>Register</u></string>
+    <string name="and"><![CDATA[&]]></string>
+    <string name="user_mode_reason"><![CDATA[User Mode is a prerequisite for all features.]]></string>
+
+</resources>

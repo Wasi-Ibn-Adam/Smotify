@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/app_viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="3dp"
+        android:background="@drawable/shape_background_app_home_pager"
+        app:layout_constraintBottom_toTopOf="@+id/handler_nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/handler_toolbar" />
+
+    <include layout="@layout/handler_nav_bar" />
+
+    <include layout="@layout/handler_tool_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_all_read"
+        android:icon="@drawable/base_read_1"
+        android:title="All Read" /><!-- All-Read -->
+
+    <item
+        android:id="@+id/nav_app_show"
+        android:icon="@drawable/base_secret"
+        android:title="Secret Notifications" /><!-- Show Secrets -->
+
+    <item
+        android:id="@+id/nav_app_hide"
+        android:icon="@drawable/base_hide_1"
+        android:title="General Notifications" /><!-- Hide Secrets -->
+
+    <item
+        android:id="@+id/nav_cloud_show"
+        android:icon="@drawable/base_cloud_1"
+        android:title="Cloud Notifications" /><!-- Cloud Notifications -->
+    <item
+        android:id="@+id/nav_phone_show"
+        android:icon="@drawable/base_phone"
+        android:title="Phone Notifications" /><!-- Phone Notifications -->
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/base_settings_1"
+        android:title="Settings" /><!-- Settings -->
+
+</menu>

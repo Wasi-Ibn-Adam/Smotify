@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/handler_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_background_app_dialog"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dialog_app_permission_title"
+                style="@style/Theme.FireKit.DIALOG.PERMISSION.TITLE"
+                android:text="Header" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dialog_app_permission_description"
+                style="@style/Theme.FireKit.DIALOG.PERMISSION.DESCRIPTION"
+                android:text="Detail" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="end"
+            android:visibility="visible"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dialog_app_permission_btn_no"
+                style="@style/Theme.FireKit.DIALOG.PERMISSION.BUTTON.CANCEL"
+                android:text="Cancel" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dialog_app_permission_btn_yes"
+                style="@style/Theme.FireKit.DIALOG.PERMISSION.BUTTON.GRANT"
+                android:text="Read" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/Theme.FireKit.DIALOG.DECOR.LEFT"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

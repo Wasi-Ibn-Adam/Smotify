@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Shadow Layers-->
+
+    <item
+        android:left="2dp"
+        android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <padding
+                android:top="2dp"
+                android:right="2dp"
+                android:left="0dp"
+                android:bottom="0dp" />
+            <corners android:radius="20dp" />
+            <solid android:color="@color/firekit_theme_shadow_1" />
+
+        </shape>
+    </item>
+
+    <!--################# -->
+    <item
+        android:left="1.5dp"
+        android:top="1.5dp">
+        <shape android:shape="rectangle">
+            <padding
+                android:top="1.5dp"
+                android:left="0dp"
+                android:right="1.5dp"
+                android:bottom="0dp" />
+            <corners android:radius="20dp" />
+            <solid android:color="@color/firekit_theme_shadow_2" />
+
+        </shape>
+    </item>
+
+    <!--################# -->
+
+    <item
+        android:left="1dp"
+        android:bottom="1dp">
+        <shape android:shape="rectangle">
+
+            <padding
+                android:top="1dp"
+                android:right="1dp"
+                android:left="0.5dp"
+                android:bottom="0.5dp" />
+            <corners android:radius="20dp" />
+            <solid android:color="@color/firekit_theme_shadow_3" />
+
+        </shape>
+    </item>
+
+    <!--ForeGround-->
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="-45"
+                android:centerColor="@color/fireKit_window_back_center"
+                android:centerY="0.65"
+                android:endColor="@color/fireKit_window_back_end"
+                android:startColor="@color/fireKit_window_back_start" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SocialApp">
+        <attr name="img" format="reference" />
+        <attr name="appName" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="PhoneText">
+        <attr name="android:background" format="reference" />
+        <attr name="numberAppearance" format="reference" />
+        <attr name="android:popupBackground" format="reference" />
+        <attr name="android:hint" format="reference|string" />
+    </declare-styleable>
+
+</resources>

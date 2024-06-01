@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialog_appdata_display_message"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/handler_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_background_app_dialog"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dialog_appdata_display_message_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/todo" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/dialog_appdata_display_message_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/base_share_img" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/dialog_appdata_display_message_icon"
+            app:layout_constraintTop_toTopOf="@id/dialog_appdata_display_message_icon">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                        android:text="Title: " />
+
+                    <TextView
+                        android:id="@+id/dialog_appdata_display_message_title"
+                        style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                        android:text="Sub-Title: " />
+
+                    <TextView
+                        android:id="@+id/dialog_appdata_display_message_subtitle"
+                        style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                        android:text="Text: " />
+
+                    <TextView
+                        android:id="@+id/dialog_appdata_display_message_text"
+                        style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE"
+                        android:autoLink="all"
+                        android:longClickable="true"
+                        android:textIsSelectable="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                        android:text="Extra-Details: " />
+
+                    <TextView
+                        android:id="@+id/dialog_appdata_display_message_subtext"
+                        style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                        android:text="Receive Time: " />
+
+                    <TextView
+                        android:id="@+id/dialog_appdata_display_message_time"
+                        style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+                </LinearLayout>
+
+                <com.lassanit.smotify.display.view.SmartMediaView
+                    android:id="@+id/dialog_appdata_display_message_media"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <View
+        style="@style/Theme.FireKit.DIALOG.DECOR.RIGHT"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

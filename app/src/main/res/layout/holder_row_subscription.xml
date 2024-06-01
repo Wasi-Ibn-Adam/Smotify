@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_box_curved">
+
+    <TextView
+        android:id="@+id/product_title"
+        style="@style/Theme.FireKit.APP.TEXT.BLACK"
+        android:text="Weekly"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginVertical="10dp"
+        android:id="@+id/product_desc"
+        style="@style/Theme.FireKit.APP.TEXT.BLACK"
+        android:text="No ads \nAds Free \nTrial"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/product_price"
+        style="@style/Theme.FireKit.APP.TEXT.BLACK"
+        android:text="1.99 USD"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

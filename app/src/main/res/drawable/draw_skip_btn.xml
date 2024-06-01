@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="130dp"
+        android:height="70dp"
+        android:drawable="@drawable/draw_skip_background"
+        android:gravity="center|right"
+        android:right="-60dp" />
+
+    <item
+        android:width="150dp"
+        android:height="90dp"
+        android:drawable="@drawable/draw_skip_background"
+        android:gravity="center|right"
+        android:right="-70dp" />
+    <item
+        android:width="180dp"
+        android:height="110dp"
+        android:drawable="@drawable/draw_skip_background"
+        android:gravity="center|right"
+        android:right="-80dp" />
+    <item
+        android:width="210dp"
+        android:height="130dp"
+        android:drawable="@drawable/draw_skip_background"
+        android:gravity="center|right"
+        android:right="-90dp" />
+</layer-list>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DataView">
+        <attr name="title" format="string|reference" />
+        <attr name="titleDesc" format="string|reference" />
+        <attr name="text" format="string|reference" />
+        <attr name="textDesc" format="string|reference" />
+        <attr name="src" format="reference" />
+        <attr name="logo" format="reference" />
+        <attr name="time" format="integer" />
+        <attr name="read" format="boolean" />
+        <attr name="unreadCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ProductView">
+        <attr name="productName" format="string|reference" />
+        <attr name="productDetail" format="string|reference" />
+        <attr name="productPrice" format="string|reference" />
+        <attr name="productSelection" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsTab">
+        <attr name="android:title" format="string|reference" />
+        <attr name="desc" format="string|reference" />
+        <attr name="android:src" format="reference" />
+        <attr name="logoTint" format="color" />
+        <attr name="gif" format="reference" />
+        <attr name="seekbar" format="boolean" />
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="min" format="integer" />
+        <attr name="endIcon" format="reference" />
+
+        <attr name="extraType" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="endIcon" value="0" />
+            <enum name="yesNo" value="1" />
+        </attr>
+
+
+    </declare-styleable>
+
+    <declare-styleable name="ProfileTab">
+        <attr name="label" format="string" />
+        <attr name="value" format="string" />
+        <attr name="checked" format="boolean" />
+        <attr name="isPassword" format="boolean" />
+        <attr name="tabType" format="enum">
+            <enum name="textField" value="1" />
+            <enum name="switchField" value="0" />
+            <enum name="none" value="-1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

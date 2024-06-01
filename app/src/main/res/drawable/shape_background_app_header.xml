@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Shadow Layers-->
+
+    <item
+        android:right="2dp"
+        android:top="2dp">
+        <shape android:shape="rectangle">
+            <padding
+                android:bottom="2dp"
+                android:left="2dp"
+                android:right="0dp"
+                android:top="0dp" />
+            <corners android:radius="20dp" />
+            <solid android:color="@color/firekit_theme_shadow_2" />
+        </shape>
+    </item>
+
+    <!--################# -->
+    <item
+        android:right="1.5dp"
+        android:top="1.5dp">
+        <shape android:shape="rectangle">
+            <padding
+                android:bottom="1.5dp"
+                android:left="1.5dp"
+                android:right="0dp"
+                android:top="0dp" />
+            <corners android:radius="20dp" />
+            <solid android:color="@color/firekit_theme_shadow_2" />
+        </shape>
+    </item>
+
+    <!--################# -->
+
+    <item
+        android:right="1dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="0.5dp"
+                android:top="0.5dp" />
+            <corners android:radius="20dp" />
+            <solid android:color="@color/firekit_theme_shadow_3" />
+
+        </shape>
+    </item>
+
+    <!--ForeGround-->
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/firekit_theme_shadow_3" />
+            <corners android:radius="20dp" />
+            <!--
+            <solid android:color="@color/fireKit_shapeActivityBackground_gradientCenter" />
+             -->
+            <gradient
+                android:centerColor="@color/fireKit_theme_50"
+                android:endColor="@color/fireKit_theme_75"
+                android:gradientRadius="45dp"
+                android:startColor="@color/fireKit_theme_25" />
+        </shape>
+    </item>
+
+
+</layer-list>

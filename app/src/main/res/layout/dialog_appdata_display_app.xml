@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/handler_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_background_app_dialog"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dialog_appdata_display_app_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/dialog_appdata_display_app_name"
+                style="@style/Theme.FireKit.DIALOG.DISPLAY.TITLE" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                    android:text="App ID: " />
+
+                <TextView
+                    android:id="@+id/dialog_appdata_display_app_pkg"
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                    android:text="App Version: " />
+
+                <TextView
+                    android:id="@+id/dialog_appdata_display_app_version"
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                    android:text="App Status: " />
+
+                <TextView
+                    android:id="@+id/dialog_appdata_display_app_status"
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                    android:text="Installed ON: " />
+
+                <TextView
+                    android:id="@+id/dialog_appdata_display_app_install"
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                    android:text="Updated ON: " />
+
+                <TextView
+                    android:id="@+id/dialog_appdata_display_app_update"
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.LABEL"
+                    android:text="Store Link: " />
+
+                <TextView
+                    android:id="@+id/dialog_appdata_display_app_link"
+                    style="@style/Theme.FireKit.DIALOG.DISPLAY.VALUE"
+                    android:autoLink="web" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/Theme.FireKit.DIALOG.DECOR.RIGHT"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_select"
+        android:title="Select" />
+
+    <item
+        android:id="@+id/item_open"
+        android:title="Open App"
+        />
+    <item
+        android:id="@+id/item_show"
+        android:title="Make General" />
+    <item
+        android:id="@+id/item_hide"
+        android:title="Make Secret" />
+
+    <item
+        android:id="@+id/item_read"
+        android:title="Mark as Read" />
+
+    <item
+        android:id="@+id/item_details"
+        android:title="Details" />
+
+    <item
+        android:id="@+id/item_delete"
+        android:title="Delete" />
+
+</menu>

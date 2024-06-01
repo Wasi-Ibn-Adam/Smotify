@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/Theme.FireKit.Consent.ACCOUNT.TEXTVIEW.TITLE"
+        android:text="Smart Notify"
+        app:layout_constraintBottom_toTopOf="@id/t_table_lay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/t_table_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow">
+
+            <androidx.appcompat.widget.AppCompatTextView style="@style/Theme.FireKit.APP.TEXT" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow.ITEM.HEADER"
+                android:text="Guest" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow.ITEM.HEADER"
+                android:text="User" />
+        </TableRow>
+
+        <TableRow style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow.ITEM.TEXT"
+                android:text="Private Notifications" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.NO" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.YES" />
+        </TableRow>
+
+        <TableRow style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow.ITEM.TEXT"
+                android:text="Delete Notifications" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.YES" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.YES" />
+        </TableRow>
+
+        <TableRow style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow.ITEM.TEXT"
+                android:text="Backup/Recovery" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.YES" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.YES" />
+        </TableRow>
+
+        <TableRow style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow.ITEM.TEXT"
+                android:text="Share Notification" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.NO" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.YES" />
+        </TableRow>
+
+        <TableRow style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow.ITEM.TEXT"
+                android:text="Ads Removal" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.NO" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.YES" />
+        </TableRow>
+        <TableRow style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow.ITEM.TEXT"
+                android:text="Multi-Device Sync" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.NO" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/Theme.FireKit.Consent.Account.Item.YES" />
+        </TableRow>
+
+        <TableRow style="@style/Theme.FireKit.Consent.ACCOUNT.TableRow">
+
+            <androidx.appcompat.widget.AppCompatTextView style="@style/Theme.FireKit.APP.TEXT" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/guest_consent"
+                style="@style/Theme.FireKit.Consent.Account.Item.SELECT" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/user_consent"
+                style="@style/Theme.FireKit.Consent.Account.Item.SELECT" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/t_table_lay"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Theme.FireKit.Consent.ACCOUNT.NOTE"
+            android:text="Note:"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Theme.FireKit.Consent.ACCOUNT.NOTE"
+            android:layout_marginStart="5dp"
+            android:text="@string/user_mode_reason"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

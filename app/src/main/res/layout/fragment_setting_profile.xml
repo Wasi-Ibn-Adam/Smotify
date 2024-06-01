@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:backgroundTint="@color/black"
+                android:src="@drawable/base_edit"
+                app:fabSize="mini"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_img"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginVertical="30dp"
+                android:src="@drawable/base_user"
+                app:civ_border_color="@color/fireKit_opposite_theme_50"
+                app:civ_border_width="3dp"
+                app:civ_circle_background_color="@color/fireKit_opposite_theme_25"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/profile_edit_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:backgroundTint="@color/black"
+                android:src="@drawable/base_edit"
+                android:visibility="gone"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_img"
+                app:layout_constraintEnd_toEndOf="@+id/profile_img" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/shape_background_app_header"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.lassanit.smotify.customviews.ProfileTab
+                    android:id="@+id/profile_t_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    app:label="Name"
+                    app:tabType="textField" />
+
+                <com.lassanit.smotify.customviews.ProfileTab
+                    android:id="@+id/profile_t_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    app:label="Email"
+                    app:tabType="textField">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="?android:attr/listDivider" />
+                </com.lassanit.smotify.customviews.ProfileTab>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/shape_background_app_header"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/profile_t_provider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.lassanit.smotify.customviews.ProfileTab
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        app:label="Connected with:"
+                        app:tabType="none" />
+                </LinearLayout>
+
+                <com.lassanit.smotify.customviews.ProfileTab
+                    android:id="@+id/profile_t_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    app:label="Change Password"
+                    app:tabType="none" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/profile_edit_save"
+                style="@style/Theme.FireKit.APP.BUTTON"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="10dp"
+                android:text="Done"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

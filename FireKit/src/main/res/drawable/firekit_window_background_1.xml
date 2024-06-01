@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/fireKit_theme"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="-45"
+                android:centerY="0.65"
+                android:centerColor="@color/fireKit_window_back_center"
+                android:endColor="@color/fireKit_window_back_end"
+                android:startColor="@color/fireKit_window_back_start" />
+        </shape>
+    </item>
+</layer-list>
+

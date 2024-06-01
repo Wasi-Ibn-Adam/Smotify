@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/profile_tab_label"
+        style="@style/Theme.FireKit.TAB.PROFILE.LABEL"
+        android:text="Label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/profile_tab_value_lay"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/profile_tab_value_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/profile_tab_value_text"
+            style="@style/Theme.FireKit.TAB.PROFILE.VALUE"
+            android:text="Value"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/profile_tab_value_text_edit"
+            style="@style/Theme.FireKit.TAB.PROFILE.VALUE.IMG"
+            android:background="@drawable/base_edit"
+            android:backgroundTint="@color/fireKit_opposite_theme"
+            android:backgroundTintMode="src_in"
+            android:contentDescription="@string/todo"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/profile_tab_value_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:padding="3dp"
+            android:visibility="gone"
+            app:switchPadding="10dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

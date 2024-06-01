@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/firekit_window_background_1" />
+
+    <item
+        android:width="@dimen/fireKit_appLogo_splash_width"
+        android:height="@dimen/fireKit_appLogo_splash_height"
+        android:drawable="@drawable/firekit_splash_logo"
+        android:gravity="center" />
+</layer-list>

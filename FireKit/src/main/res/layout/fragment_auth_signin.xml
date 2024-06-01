@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <include layout="@layout/container_app_logo" />
+
+    <com.google.android.material.textfield.TextInputLayout style="@style/Theme.FireKit.REG.TEXT.EDIT.EMAIL.LAY">
+
+        <androidx.appcompat.widget.AppCompatEditText style="@style/Theme.FireKit.REG.TEXT.EDIT.EMAIL" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout style="@style/Theme.FireKit.REG.TEXT.EDIT.PASSWORD.LAY">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/Theme.FireKit.REG.TEXT.EDIT.PASSWORD"
+            android:layout_marginBottom="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/txt_forget"
+        style="@style/Theme.FireKit.REG.TEXT.FORGET"
+        android:text="@string/fireKit_action_textView_forgetPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Theme.FireKit.APP.BUTTON"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/fireKit_action_button_signIn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/Theme.FireKit.REG.TEXT"
+            android:layout_marginEnd="5dp"
+            android:text="@string/fireKit_info_textView_newUser" />
+
+        <TextView
+            android:id="@+id/txt_reg"
+            style="@style/Theme.FireKit.REG.TEXT.REG"
+            android:text="@string/fireKit_info_textView_register" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/firekit_window_background_1"
+    android:padding="10dp"
+    android:paddingVertical="20dp"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_app_subscription_title"
+            style="@style/Theme.FireKit.APP.TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Smart Notify PRO"
+            android:textSize="26sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:src="@drawable/ads" />
+
+        <TextView
+            android:id="@+id/dialog_app_subscription_desc"
+            style="@style/Theme.FireKit.APP.TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No-more Ads"
+            android:textAllCaps="false"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dialog_app_subscription_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_app_subscription_cancel"
+        style="@style/Theme.FireKit.APP.TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="Not Now"
+        android:textAllCaps="true"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--
+        Types
+        -> App
+        -> Activity / Window
+        -> Button
+        -> EditText / PhoneText
+        -> TextView
+    ###############################################
+
+    FireKit_(Type)(SubType)_(use place)_(attr)
+
+    ## in case of shapes there is no need to tell place of use
+    FireKit_shape(Type)(SubType)_(attr)
+
+    -->
+
+
+    <!--*  FireKit App -->
+    <!--  App Logo-->
+    <dimen name="fireKit_appLogo_splash_width">120dp</dimen>
+    <dimen name="fireKit_appLogo_splash_height">200dp</dimen>
+    <dimen name="fireKit_appLogo_default_width">200dp</dimen>
+    <dimen name="fireKit_appLogo_default_height">200dp</dimen>
+    <dimen name="fireKit_appLogo_default_maxWidth">250dp</dimen>
+    <dimen name="fireKit_appLogo_default_maxHeight">250dp</dimen>
+    <dimen name="fireKit_appLogo_default_minWidth">100dp</dimen>
+    <dimen name="fireKit_appLogo_default_minHeight">100dp</dimen>
+
+    <!--*  FireKit Activity / Window -->
+    <!--  shape -->
+
+    <!--*  FireKit Button -->
+    <dimen name="fireKit_button_default_width">250dp</dimen>
+    <dimen name="fireKit_button_default_height">50dp</dimen>
+    <dimen name="fireKit_button_small_width">50dp</dimen>
+    <dimen name="fireKit_button_small_height">50dp</dimen>
+    <dimen name="fireKit_button_small_padding">15dp</dimen>
+    <!--  shape -->
+    <dimen name="fireKit_shapeButton_strokeWidth">1dp</dimen>
+    <dimen name="fireKit_shapeButton_radius">30dp</dimen>
+
+    <!--*  FireKit EditText / PhoneText -->
+    <dimen name="fireKit_editText_default_width">300dp</dimen>
+    <dimen name="fireKit_editText_default_height">50dp</dimen>
+
+    <!--  shape -->
+    <dimen name="fireKit_shapeEditText_strokeWidth">1dp</dimen>
+    <dimen name="fireKit_shapeEditText_radius">30dp</dimen>
+    <dimen name="fireKit_shapeEditText_paddingTop">5dp</dimen>
+    <dimen name="fireKit_shapeEditText_paddingBottom">5dp</dimen>
+    <dimen name="fireKit_shapeEditText_paddingLeft">20dp</dimen>
+    <dimen name="fireKit_shapeEditText_paddingRight">20dp</dimen>
+
+    <!--*  FireKit TextView -->
+
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="fireKit_theme">#000000</color>
+    <color name="fireKit_theme_25">#40000000</color>
+    <color name="fireKit_theme_50">#80000000</color>
+    <color name="fireKit_theme_75">#BF000000</color>
+    <color name="fireKit_opposite_theme">#FFFFFF</color>
+    <color name="fireKit_opposite_theme_25">#40FFFFFF</color>
+    <color name="fireKit_opposite_theme_50">#80FFFFFF</color>
+    <color name="fireKit_opposite_theme_75">#BFFFFFFF</color>
+
+    <!--*  FireKit Activity / Window -->
+    <color name="fireKit_window_app_statusBar">@color/black</color>
+
+    <color name="fireKit_window_splash_statusBar">@color/transparent</color>
+    <color name="fireKit_window_splash_navigationBar">@color/transparent</color>
+
+    <color name="fireKit_window_back_start">#151E26</color>
+    <color name="fireKit_window_back_center">#13161A</color>
+    <color name="fireKit_window_back_end">#221B20</color>
+
+
+
+</resources>
